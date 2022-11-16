@@ -2,7 +2,7 @@ import * as Dialog from '@radix-ui/react-dialog'
 import logoImg from '../assets/logo-nlw-esports.svg'
 import { Carrossel } from '../components/Carrossel/Carrossel'
 import { CreateAdModal } from '../components/Modal/CreateAdModal'
-import { CreateAdBaneer } from '../components/Banner/CreateAdBaneer'
+import { CreateAdBanner } from '../components/Banner/CreateAdBanner'
 
 export function App() {
   return (
@@ -15,7 +15,7 @@ export function App() {
       <Carrossel />
 
       <Dialog.Root>
-        <CreateAdBaneer />
+        <CreateAdBanner />
 
         <CreateAdModal />
       </Dialog.Root>
