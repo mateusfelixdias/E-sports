@@ -5,7 +5,7 @@ export function GameBanner({ adsCount, bannerUrl, title }: IPropsGameBanner) {
 
   return (
     <>
-      <a href="" className="relative rounded-lg overflow-hidden">
+      <a href={bannerUrl} className="relative rounded-lg overflow-hidden">
         <img src={bannerUrl} alt="" />
 
         <div className="w-full pt-16 pb-4 px-4 bg-game-gradient absolute bottom-0 right-0 left-0">
