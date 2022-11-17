@@ -4,24 +4,30 @@ import { Request } from '../interfaces/request'
 import { convertHourStringToMinutes } from '../utils/convert-hour-string-to-minutes'
 
 export const create = async ({ body: { data }, params }: Request, response: Response) => {
-  const { discord, hourEnd, hourStart, name, useVoiceChannel, weekDays, yearsPlaying } = data
-  const { id } = params
+  try {
+    const { discord, hourEnd, hourStart, name, useVoiceChannel, weekDays, yearsPlaying } = data
+    const { id } = params
 
-  const gameId = id
-  const prisma = new PrismaClient()
+    const gameId = id
+    const prisma = new PrismaClient()
 
-  const ad = await prisma.ad.create({
-    data: {
-      gameId,
-      name,
-      yearsPlaying,
-      discord,
-      weekDays: weekDays.join(','),
-      hourStart: convertHourStringToMinutes(hourStart),
-      hourEnd: convertHourStringToMinutes(hourEnd),
-      useVoiceChannel,
-    },
-  })
+    const ad = await prisma.ad.create({
+      data: {
+        gameId,
+        name,
+        yearsPlaying,
+        discord,
+        weekDays: weekDays.join(','),
+        hourStart: convertHourStringToMinutes(hourStart),
+        hourEnd: convertHourStringToMinutes(hourEnd),
+        useVoiceChannel,
+      },
+    })
 
-  return response.status(201).json(ad).end()
+    return response.status(201).json(ad).end()
+  } catch (err) {
+    console.log(err)
+
+    return response.sendStatus(500)
+  }
 }
