@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react'
 import { IGames } from '../../interfaces/Games'
 import AliceCarousel from 'react-alice-carousel'
 import { GameBanner } from '../Banner/GameBanner'
-import { bannerCarouselPesponsiveness } from '../../utils/bannerCarouselPesponsiveness'
+import { responsive } from '../../utils/carousel/responsive'
 
 import 'react-alice-carousel/lib/alice-carousel.css'
 
@@ -33,7 +33,7 @@ export function Carrossel() {
         disableDotsControls
         touchMoveDefaultEvents
         controlsStrategy="alternate"
-        responsive={bannerCarouselPesponsiveness}
+        responsive={responsive}
       />
     </div>
   )
