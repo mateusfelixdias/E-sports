@@ -1,14 +1,16 @@
 export interface Request {
   body: {
-    discord: string
-    hourStart: string
-    hourEnd: string
-    name: string
-    useVoiceChannel: boolean
-    yearsPlaying: number
-    weekDays: Array<string>
+    data: {
+      discord: string
+      hourStart: string
+      hourEnd: string
+      name: string
+      useVoiceChannel: boolean
+      yearsPlaying: number
+      weekDays: number[]
+    }
   }
   params: {
     id: string
   }
-};
+}
