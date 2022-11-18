@@ -1,5 +1,3 @@
-- OBS: O projeto está em desenvolvimento!
-
 # E-SPORTS;
 
 ## Começando.
@@ -46,13 +44,13 @@ Aqui você pode publicar um anúncio!
 <img aling="center" src="./images/imageThree.png" alt="image da tela inicial do site E-sposts.">
 <br><br>
 
-O modal para públicacão do anúncio!
+O modal para publicacão do anúncio!
 <br><br>
 
 <img aling="center" src="./images/imageTwo.png" alt="image da tela inicial do site E-sposts para públicar um anúncio.">
 <br><br>
 
-Pronto, essa foi uma breve demostração do site, pode ficar a vontade para modificá-lo, etc. :)
+Pronto, essa foi uma breve demostração do site, pode ficar a vontade para modificá-lo, fazer melhorias, etc.
 
 ## 🛠️ Tecnologias utilizadas.
 
@@ -72,3 +70,6 @@ Pronto, essa foi uma breve demostração do site, pode ficar a vontade para modi
 ## ✒️ Autor
 
 - [Mateus](https://github.com/mateusfelixdias).
+
+## Agredecimentos 
+@rocketseat
