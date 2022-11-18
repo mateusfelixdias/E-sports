@@ -25,6 +25,7 @@ Em seguida execute o comando para inicializar o projeto:
 ```
 yarn run dev
 ```
+
 <br>
 Após executar o comando yarn run dev, você pode acessar o site na sua porta local!
 <br><br>
@@ -71,5 +72,6 @@ Pronto, essa foi uma breve demostração do site, pode ficar a vontade para modi
 
 - [Mateus](https://github.com/mateusfelixdias).
 
-## Agredecimentos 
-@rocketseat
+## Agredecimentos
+
+@ROCKETSEAT
