@@ -2,7 +2,7 @@
 
 ## Começando.
 
-Olá, no projeto E-sports você pode ver várias opções de jogos mais jogados no momento. Além disso, você pode adicionar quantos anúncios você quiser nós jogos que estão disponiveis!
+Olá, no projeto E-sports você pode ver várias opções de jogos mais jogados no momento. Além disso, você pode adicionar quantos anúncios você quiser nos jogos que estão disponiveis!
 
 ### 📋 Pré-requisitos
 
@@ -36,19 +36,19 @@ A tela inicial do site! Aqui está os jogos, você pode passar o carrossel para 
 Tela inicial do site!
 <br><br>
 
-<img aling="center" src="./images/imageOne.png" alt="image da tela inicial do site E-sposts.">
+<img aling="center" src="./public/imageOne.png" alt="image da tela inicial do site E-sposts.">
 <br><br>
 
 Aqui você pode publicar um anúncio!
 <br><br>
 
-<img aling="center" src="./images/imageThree.png" alt="image da tela inicial do site E-sposts.">
+<img aling="center" src="./public/imageThree.png" alt="image da tela inicial do site E-sposts.">
 <br><br>
 
 O modal para publicacão do anúncio!
 <br><br>
 
-<img aling="center" src="./images/imageTwo.png" alt="image da tela inicial do site E-sposts para públicar um anúncio.">
+<img aling="center" src="./public/imageTwo.png" alt="image da tela inicial do site E-sposts para públicar um anúncio.">
 <br><br>
 
 Pronto, essa foi uma breve demostração do site, pode ficar a vontade para modificá-lo, fazer melhorias, etc.
