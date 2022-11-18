@@ -1,4 +1,4 @@
-# OBS: O projeto e o README estão em desenvolvimento!
+- OBS: O projeto está em desenvolvimento!
 
 # E-SPORTS;
 
@@ -27,26 +27,28 @@ Em seguida execute o comando para inicializar o projeto:
 ```
 yarn run dev
 ```
-
-<br><br>
+<br>
 Após executar o comando yarn run dev, você pode acessar o site na sua porta local!
 <br><br>
 
-A tela inicial do site! Aqui está jogos, você pode passar o carrossel para o lado e ver os todos jogos. Se você clicar em algum jogo vai mostrar somente a imagem do jogo. Além disso, você pode publicar um anúncio!
+A tela inicial do site! Aqui está os jogos, você pode passar o carrossel para o lado e ver os todos jogos. Se você clicar em algum jogo vai mostrar somente a imagem do jogo. Além disso, você pode publicar um anúncio!
 <br>
 
 Tela inicial do site!
-<br>
+<br><br>
+
 <img aling="center" src="./images/imageOne.png" alt="image da tela inicial do site E-sposts.">
 <br><br>
 
 Aqui você pode publicar um anúncio!
-<br>
+<br><br>
+
 <img aling="center" src="./images/imageThree.png" alt="image da tela inicial do site E-sposts.">
 <br><br>
 
 O modal para públicacão do anúncio!
-<br>
+<br><br>
+
 <img aling="center" src="./images/imageTwo.png" alt="image da tela inicial do site E-sposts para públicar um anúncio.">
 <br><br>
 
