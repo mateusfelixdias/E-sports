@@ -2,14 +2,13 @@ import * as Yup from 'yup'
 import { ICreateAd } from '../../interfaces/CreateAd'
 
 export const createAdValidation = Yup.object().shape({
-  name: Yup.string().required('O name campo é obrigatório!'),
+  name: Yup.string().required('O nome campo é obrigatório!'),
   yearsPlaying: Yup.number()
-    .positive()
-    .integer()
-    .required('O campo Joga a quanto tempo é obrigatório!'),
+    .positive('No campo Joga a quanto anos têm que ser um número maior ou igual a zero!')
+    .required('O campo Joga a quanto anos é obrigatório!'),
   discord: Yup.string().required('O campo discord é obrigatório!'),
   weekDays: Yup.array()
-    .min(1, 'Selecione alguma dia da semana que você joga!')
+    .min(1, 'Selecione algum dia da semana que você constuma jogar!')
     .required('O campo dias que você costuma jogar é obrigatório!'),
   hourStart: Yup.string().required('O campo Qual horário do dia é obrigatório!'),
   hourEnd: Yup.string().required('O campo Qual horário do dia é obrigatório!'),
@@ -24,7 +23,7 @@ export async function dataValidationWhenCreatingAnAd({
   useVoiceChannel,
   weekDays,
   yearsPlaying,
-}: ICreateAd): Promise<true | Yup.ValidationError[]> {
+}: ICreateAd) {
   try {
     await createAdValidation.validate(
       {
