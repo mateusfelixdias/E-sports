@@ -1,34 +1,25 @@
 import { api } from '../../lib/api'
-import { formattingAdDataAndValidating } from './formattingAdDataAndValidating'
+import { IForm } from '../../interfaces/form'
+import { dataValidationWhenCreatingAnAd } from './dataValidationWhenCreatingAnAd'
 
-export async function createAd(
-  discord: FormDataEntryValue,
-  hourEnd: FormDataEntryValue,
-  hourStart: FormDataEntryValue,
-  name: FormDataEntryValue,
-  yearsPlaying: FormDataEntryValue,
-  useVoiceChannel: boolean,
-  playerSelectedGame: string,
-  weekDays: string[]
-) {
-  const { convertedData, createAdDataIsThenValid } = await formattingAdDataAndValidating(
-    discord,
-    hourEnd,
-    hourStart,
-    name,
-    yearsPlaying,
-    useVoiceChannel,
-    weekDays
-  )
+export async function createAd(form: IForm) {
+  const createAdDataIsThenValid: boolean | string = await dataValidationWhenCreatingAnAd({
+    ...form,
+    yearsPlaying: Number(form.yearsPlaying),
+    weekDays: form.weekDays.map(Number),
+  })
 
   if (createAdDataIsThenValid === true) {
-    const { status } = await api.post(`/games/${playerSelectedGame}/ads`, {
-      data: { ...convertedData, useVoiceChannel } ,
+    const { status } = await api.post(`/games/${form.playerSelectedGame}/ads`, {
+      data: {
+        ...form,
+        yearsPlaying: Number(form.yearsPlaying),
+        weekDays: form.weekDays.map(Number),
+      },
     })
 
-    if (status === 204) return true
-
-    else return false
+    if (status === 201) return true
+    else return 'Não foi possivel criar seu anúncio, tente novamente.'
   }
 
   return createAdDataIsThenValid
