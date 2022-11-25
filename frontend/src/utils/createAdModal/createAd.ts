@@ -1,13 +1,9 @@
 import { api } from '../../lib/api'
 import { IForm } from '../../interfaces/form'
-import { dataValidationWhenCreatingAnAd } from './dataValidationWhenCreatingAnAd'
+import { dataValidationWhenCreatingAnAd } from './validationOfAdCreationData/dataValidationWhenCreatingAnAd'
 
 export async function createAd(form: IForm) {
-  const createAdDataIsThenValid: boolean | string = await dataValidationWhenCreatingAnAd({
-    ...form,
-    yearsPlaying: Number(form.yearsPlaying),
-    weekDays: form.weekDays.map(Number),
-  })
+  const createAdDataIsThenValid: boolean | string = await dataValidationWhenCreatingAnAd(form)
 
   if (createAdDataIsThenValid === true) {
     const { status } = await api.post(`/games/${form.playerSelectedGame}/ads`, {
