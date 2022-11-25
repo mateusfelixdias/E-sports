@@ -3,7 +3,7 @@ import { Input } from '../Form/Input'
 import { Error } from '../Form/Alerts/Error'
 import { SelectGames } from '../Form/Select'
 import { IForm } from '../../interfaces/form'
-import { Sucess } from '../Form/Alerts/Sucess'
+import { Success } from '../Form/Alerts/Success'
 import * as Select from '@radix-ui/react-select'
 import * as Dialog from '@radix-ui/react-dialog'
 import * as Checkbox from '@radix-ui/react-checkbox'
@@ -33,7 +33,7 @@ export function CreateAdModal() {
     if (typeof response === 'string') return handleError(response)
     if (typeof timeResponse === 'string') return handleError(timeResponse)
 
-    return handleSucess()
+    return handleSuccess()
   }
 
   const handleError = (response: string) => {
@@ -42,7 +42,7 @@ export function CreateAdModal() {
     return
   }
 
-  const handleSucess = () => {
+  const handleSuccess = () => {
     setTimeout(() => {
       setSuccessMessage(true)
       setCreatingAd(false)
@@ -78,7 +78,7 @@ export function CreateAdModal() {
           {theFieldsAreInvalid ? (
             <Error message={errorMessage} />
           ) : successMessage ? (
-            <Sucess />
+            <Success />
           ) : null}
 
           <Dialog.Title className="text-3xl font-black">Públique um anúncio</Dialog.Title>

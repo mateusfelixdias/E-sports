@@ -2,7 +2,7 @@ import { useState } from 'react'
 import classNames from 'classnames'
 import { Check, X } from 'phosphor-react'
 
-export function Sucess() {
+export function Success() {
   const [clickBackButton, setClickBackButton] = useState<boolean>(false)
 
   return (
