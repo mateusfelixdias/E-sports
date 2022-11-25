@@ -12,6 +12,7 @@ import { Check, GameController } from 'phosphor-react'
 import * as ToggleGroup from '@radix-ui/react-toggle-group'
 import { createAd } from '../../utils/createAdModal/createAd'
 import { emptyForm } from '../../utils/createAdModal/emptyForm'
+import { timeValidation } from '../../utils/createAdModal/validationOfAdCreationData/timeValidation'
 import { daysOfTheWeekSelected } from '../../utils/toggleGroup/daysOfTheWeekSelected'
 import { listWithDaysOfTheWeek } from '../../utils/toggleGroup/listWithDaysOfTheWeek'
 
@@ -27,8 +28,10 @@ export function CreateAdModal() {
     setCreatingAd(true)
 
     const response = await createAd(form)
+    const timeResponse = timeValidation(form.hourStart, form.hourEnd)
 
     if (typeof response === 'string') return handleError(response)
+    if (typeof timeResponse === 'string') return handleError(timeResponse)
 
     return handleSucess()
   }
@@ -43,7 +46,7 @@ export function CreateAdModal() {
     setTimeout(() => {
       setSuccessMessage(true)
       setCreatingAd(false)
-      setForm(emptyForm);
+      setForm(emptyForm)
 
       setTimeout(() => setSuccessMessage(false), 5000)
     }, 1000)
