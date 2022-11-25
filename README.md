@@ -30,7 +30,7 @@ yarn run dev
 Após executar o comando yarn run dev, você pode acessar o site na sua porta local!
 <br><br>
 
-A tela inicial do site! Aqui está os jogos, você pode passar o carrossel para o lado e ver os todos jogos. Se você clicar em algum jogo vai mostrar somente a imagem do jogo. Além disso, você pode publicar um anúncio!
+A tela inicial do site! Aqui está os jogos, você pode passar o carrossel para o lado e ver todos jogos. Se você clicar em algum jogo vai mostrar somente a imagem do jogo. Além disso, você pode publicar um anúncio!
 <br>
 
 Tela inicial do site!
@@ -45,7 +45,7 @@ Aqui você pode publicar um anúncio!
 <img aling="center" src="./public/imageThree.png" alt="image da tela inicial do site E-sposts.">
 <br><br>
 
-O modal para publicacão do anúncio!
+O modal para publicacão de um anúncio!
 <br><br>
 
 <img aling="center" src="./public/imageTwo.png" alt="image da tela inicial do site E-sposts para públicar um anúncio.">
@@ -53,7 +53,22 @@ O modal para publicacão do anúncio!
 
 Pronto, essa foi uma breve demostração do site, pode ficar a vontade para modificá-lo, fazer melhorias, etc.
 
-## 🛠️ Tecnologias utilizadas.
+## 🛠️ Tecnologias utilizadas no frontend.
+
+-[axios](https://axios-http.com/ptbr/docs/intro) - É um cliente HTTP baseado em promisses, com o axios você pode fazer requisições HTTP com muito mais facilidade. Além disso, o axios pode ser utilizado tanto no lado do frontend, quanto no lado do backend.
+
+-[classnames](https://www.npmjs.com/package/classnames) - É um utilitário JavaScript simples para unir classnames condicionalmente. Com classnames você pode fazer condicionais no seu código de estilização.
+
+- [TypeScript](https://www.typescriptlang.org/) - É uma tecnologia desenvolvida pela microsoft, é um superSet do javaScript que permite utilizar tipagem estática facilitando a escrita do código.
+
+- [Tailwindcss](https://tailwindcss.com/) - É um framework que permite escrever CSS de um jeito diferente, a sua principal característica é fornecer classes utilitárias para podermos escrever CSS em nossos arquivos de marcação jsx, tsx, por exemplo.
+
+- [Vite](https://vitejs.dev/) - È uma ferramenta de contrução que pode ser utilizada com a maioria das estruturas web, como ReactJs, VueJs, entre outras. O vite é uma exelente ferranta que trás mais performace para o seu app. O vite foi criado pelo mesmo criado do vueJs, O evan you.
+
+- [Yup](https://www.npmjs.com/package/yup) - O yup é um construtor de esquemas para validação de campos, por exemplo, um formulário. Estou utilizando ele para
+  validar os dados na criação do usuário.
+
+## 🛠️ Tecnologias utilizadas no backend.
 
 - [NodeJS](https://nodejs.org/en/about/) - É uma tecnologia open-source(código aberto) e multiplataforma que permite criar ferramentas ao lado do servidor(backend) com javaScript.
 
@@ -71,7 +86,3 @@ Pronto, essa foi uma breve demostração do site, pode ficar a vontade para modi
 ## ✒️ Autor
 
 - [Mateus](https://github.com/mateusfelixdias).
-
-## Agredecimentos
-
-@ROCKETSEAT
