@@ -8,13 +8,13 @@ import { responsive } from '../../utils/carousel/responsive'
 import 'react-alice-carousel/lib/alice-carousel.css'
 
 export function Carrossel() {
-  const [games, setGames] = useState<Array<IGames>>([])
+  const [games, setGames] = useState<JSX.Element[]>()
 
   useEffect(() => {
     const games = async () => {
-      const { data }: any = await api.get('/games')
+      const { data }: IGames = await api.get('/games')
 
-      const games = data.map(({ bannerUrl, _count: { ads }, id, title }: any) => {
+      const games = data.map(({ _count: { ads }, bannerUrl, id, title }) => {
         return <GameBanner adsCount={ads} bannerUrl={bannerUrl} key={id} title={title} />
       })
 

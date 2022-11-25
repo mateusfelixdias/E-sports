@@ -1,5 +1,6 @@
 import { api } from '../../lib/api'
 import { useEffect, useState } from 'react'
+import { IGames } from '../../interfaces/Games'
 import * as Select from '@radix-ui/react-select'
 import { ChevronDownIcon } from '@radix-ui/react-icons'
 import { IPropsGameSelect } from '../../interfaces/PropsGameSelect'
@@ -9,7 +10,7 @@ export function SelectGames() {
 
   useEffect(() => {
     const games = async () => {
-      const { data }: any = await api.get('/games')
+      const { data }: IGames = await api.get('/games')
 
       setGames(data)
     }
