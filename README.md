@@ -55,9 +55,9 @@ Pronto, essa foi uma breve demostração do site, pode ficar a vontade para modi
 
 ## 🛠️ Tecnologias utilizadas no frontend.
 
--[axios](https://axios-http.com/ptbr/docs/intro) - É um cliente HTTP baseado em promisses, com o axios você pode fazer requisições HTTP com muito mais facilidade. Além disso, o axios pode ser utilizado tanto no lado do frontend, quanto no lado do backend.
+- [Axios](https://axios-http.com/ptbr/docs/intro) - É um cliente HTTP baseado em promisses, com o axios você pode fazer requisições HTTP com muito mais facilidade. Além disso, o axios pode ser utilizado tanto no lado do frontend, quanto no lado do backend.
 
--[classnames](https://www.npmjs.com/package/classnames) - É um utilitário JavaScript simples para unir classnames condicionalmente. Com classnames você pode fazer condicionais no seu código de estilização.
+- [Classnames](https://www.npmjs.com/package/classnames) - É um utilitário JavaScript simples para unir classnames condicionalmente. Com classnames você pode fazer condicionais no seu código de estilização.
 
 - [TypeScript](https://www.typescriptlang.org/) - É uma tecnologia desenvolvida pela microsoft, é um superSet do javaScript que permite utilizar tipagem estática facilitando a escrita do código.
 
