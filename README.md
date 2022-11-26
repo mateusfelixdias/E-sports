@@ -63,10 +63,10 @@ Pronto, essa foi uma breve demostração do site, pode ficar a vontade para modi
 
 - [Tailwindcss](https://tailwindcss.com/) - É um framework que permite escrever CSS de um jeito diferente, a sua principal característica é fornecer classes utilitárias para podermos escrever CSS em nossos arquivos de marcação jsx, tsx, por exemplo.
 
-- [Vite](https://vitejs.dev/) - È uma ferramenta de contrução que pode ser utilizada com a maioria das estruturas web, como ReactJs, VueJs, entre outras. O vite é uma exelente ferranta que trás mais performace para o seu app. O vite foi criado pelo mesmo criado do vueJs, O evan you.
+- [Vite](https://vitejs.dev/) - É uma ferramenta de contrução que pode ser utilizada com a maioria das estruturas web, como ReactJs, VueJs, entre outras. O vite é uma exelente ferranta que trás mais performace para o seu app. O vite foi criado pelo mesmo criado do vueJs, o evan you.
 
 - [Yup](https://www.npmjs.com/package/yup) - O yup é um construtor de esquemas para validação de campos, por exemplo, um formulário. Estou utilizando ele para
-  validar os dados na criação do usuário.
+  validar os dados na criação de um anúncio.
 
 ## 🛠️ Tecnologias utilizadas no backend.
 
@@ -81,7 +81,7 @@ Pronto, essa foi uma breve demostração do site, pode ficar a vontade para modi
 - [Bcryptjs](https://www.npmjs.com/package/bcryptjs) - O bcryptjs é uma biblioteca para encriptação de dados. Estou utilizando essa biblioteca para encriptografa a senha do usuário.
 
 - [Yup](https://www.npmjs.com/package/yup) - O yup é um construtor de esquemas para validação de campos, por exemplo, um formulário. Estou utilizando ele para
-  validar os dados na criação do usuário.
+  validar os dados na criação de um anúncio.
 
 ## ✒️ Autor
 
