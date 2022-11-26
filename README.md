@@ -74,11 +74,9 @@ Pronto, essa foi uma breve demostração do site, pode ficar a vontade para modi
 
 - [TypeScript](https://www.typescriptlang.org/) - É uma tecnologia desenvolvida pela microsoft, é um superSet do javaScript que permite utilizar tipagem estática facilitando a escrita do código.
 
-- [CORS](https://www.npmjs.com/package/cors) - CORS é um mecanismo que bloquea front-ends que não têm permições para acessar nossa API.
+- [CORS](https://www.npmjs.com/package/cors) - CORS é um mecanismo que bloquea frontends que não têm permições para acessar nossa API.
 
 - [Express](https://expressjs.com/pt-br/) - Express é um fremework web que é utilizado em conjunto ao NodeJs. O express facilita muito no gerenciamento das nossas rotas, gerenciamento das requisições HTTP e muito mais!
-
-- [Bcryptjs](https://www.npmjs.com/package/bcryptjs) - O bcryptjs é uma biblioteca para encriptação de dados. Estou utilizando essa biblioteca para encriptografa a senha do usuário.
 
 - [Yup](https://www.npmjs.com/package/yup) - O yup é um construtor de esquemas para validação de campos, por exemplo, um formulário. Estou utilizando ele para
   validar os dados na criação de um anúncio.
