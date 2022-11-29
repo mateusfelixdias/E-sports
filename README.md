@@ -36,19 +36,13 @@ A tela inicial do site! Aqui está os jogos, você pode passar o carrossel para 
 Tela inicial do site!
 <br><br>
 
-<img aling="center" src="./public/imageOne.png" alt="image da tela inicial do site E-sposts.">
-<br><br>
-
-Aqui você pode publicar um anúncio!
-<br><br>
-
-<img aling="center" src="./public/imageThree.png" alt="image da tela inicial do site E-sposts.">
+<img aling="center" src="./public/tela_inteira.png" alt="image da tela inicial do site E-sposts.">
 <br><br>
 
 O modal para publicacão de um anúncio!
 <br><br>
 
-<img aling="center" src="./public/imageTwo.png" alt="image da tela inicial do site E-sposts para públicar um anúncio.">
+<img aling="center" src="./public/modal_anuncio.png" alt="image da tela inicial do site E-sposts para públicar um anúncio.">
 <br><br>
 
 Pronto, essa foi uma breve demostração do site, pode ficar a vontade para modificá-lo, fazer melhorias, etc.
