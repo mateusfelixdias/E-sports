@@ -57,9 +57,9 @@ Pronto, essa foi uma breve demostração do site, pode ficar a vontade para modi
 
 - [Postcss](https://www.npmjs.com/package/postcss) - É uma ferramenta para transformar estilos com plug-ins CSS. Estamos utilizando o autoprefixer que é um dos plug-ins do postcss.
 
-- [Phosphor-react](https://phosphoricons.com/) é uma família de ícones flexíveis para interfaces, diagramas, detre outros.
+- [Phosphor-react](https://phosphoricons.com/) - É uma família de ícones flexíveis para interfaces, diagramas, detre outros.
 
-- [radix-ui](https://www.radix-ui.com/) É uma biblioteca de código aberto que possibilita você utilizar componentes prontos. Como por exemplo um modal, você só vai precisar estilizar o componente.
+- [Radix-ui](https://www.radix-ui.com/) - É uma biblioteca de código aberto que possibilita você utilizar componentes prontos. Como por exemplo, um modal, você só vai precisar estilizar o componente.
 
 - [Axios](https://axios-http.com/ptbr/docs/intro) - É um cliente HTTP baseado em promisses, com o axios você pode fazer requisições HTTP com muito mais facilidade. Além disso, o axios pode ser utilizado tanto no lado do frontend, quanto no lado do backend.
 
@@ -79,7 +79,9 @@ Pronto, essa foi uma breve demostração do site, pode ficar a vontade para modi
 
 - [Express](https://expressjs.com/pt-br/) - Express é um fremework web que é utilizado em conjunto ao NodeJs. O express facilita muito no gerenciamento das nossas rotas, gerenciamento das requisições HTTP e muito mais!
 
-- [Yup](https://www.npmjs.com/package/yup) - O yup é um construtor de esquemas para validação de campos, por exemplo, um formulário. Estou utilizando ele para validar os dados na criação de um anúncio.
+- [Prisma](https://www.prisma.io/) - É uma ferramenta open source, um ORM(Object-Relational Mapping), é uma ferramenta que dá suporte para vários bancos, como por exemplo, Mondodb, PostgresSQL, Sqlite, entres outros. O primas é uma ferramenta poderosíssima.
+
+- [Sqlite](https://www.sqlite.org/index.html) - É um banco de dados leve e prático, permite você utiliza-ló em sua maquina sem necessitar que o banco esteja instalado em sua maquina. Isso é possivel porque o sqlite é um banco de dados embutido. Aqui têm uma explicação de banco de dados embutido: [É só clicar aqui](https://pt.stackoverflow.com/questions/270859/o-que-%C3%A9-um-banco-de-dados-embutido-embedded).
 
 ## ✒️ Autor
 
